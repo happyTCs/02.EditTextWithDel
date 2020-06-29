@@ -82,7 +82,7 @@ public class EditTextWithDel extends AppCompatEditText {
             //大矩形左边本来是全局可见的矩形的
             getGlobalVisibleRect(rect);
             //大矩形左边比右边小50；
-            rect.left=rect.right-50;
+            rect.left=rect.right-60;
             Log.e(TAG, "onTouchEvent:rect.left="+rect.left+",rect.right"+rect.right +"rect.top="+rect.top+"rect.bottom="+rect.bottom);
             if (rect.contains(rawX, rawY)) {
                 setText("");
